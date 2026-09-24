@@ -1,0 +1,35 @@
+\chapter{Descriptive Statistics and Exploratory Data Analysis}
+\label{chap:descriptive-statistics}
+
+Descriptive statistics summarize observed data without introducing a probabilistic model. This distinction should remain explicit: a numerical summary is a property of a dataset, while an estimator is a random variable defined through a sampling model.
+
+\section{Samples and empirical distributions}
+
+Given observations $x_1,\ldots,x_n$, the empirical distribution function is
+\begin{align}
+F_n(x)=\frac{1}{n}\sum_{i=1}^{n}\mathbf{1}_{\{x_i\leq x\}}.
+\end{align}
+
+\section{Location}
+
+The arithmetic mean is
+\begin{align}
+\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i,
+\end{align}
+while the sample median is an order-statistic-based measure of central location.
+
+\section{Dispersion}
+
+The uncorrected empirical variance is
+\begin{align}
+m_2=\frac{1}{n}\sum_{i=1}^{n}(x_i-\bar{x})^2,
+\end{align}
+whereas the conventional unbiased estimator of the population variance under independent sampling is
+\begin{align}
+s^2=\frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2.
+\end{align}
+The different denominators reflect different mathematical objects and should not be conflated.
+
+\section{Exploratory graphics}
+
+Histograms, empirical distribution functions, box plots, quantile plots, and scatter plots are treated as exploratory representations. Reproducible plotting code should be stored outside the LaTeX source and exported to `assets/figures/`.
