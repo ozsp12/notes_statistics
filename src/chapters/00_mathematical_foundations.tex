@@ -1,0 +1,30 @@
+\chapter{Mathematical Foundations and Notation}
+\label{chap:foundations}
+
+This chapter fixes the notation used throughout the notes and collects the mathematical concepts that are repeatedly required in probability and statistics.
+
+\section{Sets and events}
+
+A sample space is denoted by $\Omega$, while events are represented by subsets $A,B\subseteq\Omega$. Set union, intersection, complement, and set difference are denoted by $A\cup B$, $A\cap B$, $A^{c}$, and $A\setminus B$, respectively.
+
+\section{Summation and products}
+
+For a sequence $x_1,\ldots,x_n$, the finite sum and product are written as
+\begin{align}
+\sum_{i=1}^{n}x_i,
+\qquad
+\prod_{i=1}^{n}x_i.
+\end{align}
+
+Index notation should be kept explicit whenever the range is not unambiguous.
+
+\section{Functions and transformations}
+
+Random variables will be treated as measurable functions from a probability space into a measurable state space. Transformations of random variables therefore inherit the ordinary language of functions, inverse images, monotonicity, and change of variables.
+
+\section{Linear algebra}
+
+Vectors are represented by bold symbols such as $\bm{x}$, matrices by capital letters such as $X$, and transposition by $X^{\mathsf T}$. For regression and multivariate statistics, the Euclidean inner product is
+\begin{align}
+\langle \bm{x},\bm{y}\rangle = \bm{x}^{\mathsf T}\bm{y}.
+\end{align}
